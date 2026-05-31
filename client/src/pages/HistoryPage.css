@@ -1,0 +1,213 @@
+.history-page {
+  padding: 24px;
+}
+
+.history-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.history-filters {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.history-header h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #5a3a00;
+}
+
+.history-count {
+  font-size: 12px;
+  color: #8a6020;
+  background: #f5c97a;
+  padding: 2px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.history-loading,
+.history-empty {
+  text-align: center;
+  padding: 48px 24px;
+  color: #8a6020;
+}
+
+.history-empty h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #5a3a00;
+  margin-bottom: 8px;
+}
+
+.history-empty p {
+  font-size: 14px;
+}
+
+/* GROUPS */
+.history-group {
+  margin-bottom: 32px;
+}
+
+.history-month {
+  font-size: 12px;
+  font-weight: 700;
+  color: #8a6020;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+/* TIMELINE */
+.timeline {
+  border-left: 2px solid #e6a83a;
+  margin-left: 8px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -27px;
+  top: 16px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #e6821a;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px #e6a83a;
+}
+
+.timeline-item--cancelled .timeline-dot {
+  background: #aaa;
+  box-shadow: 0 0 0 2px #ccc;
+}
+
+/* TIMELINE CARD */
+.timeline-card {
+  background: #fdecc8;
+  border: 1px solid #e6a83a;
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.timeline-item--cancelled .timeline-card {
+  background: #f5f5f5;
+  border-color: #ddd;
+  opacity: 0.8;
+}
+
+.tlc-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.tlc-emoji {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.tlc-info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.tlc-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #5a3a00;
+}
+
+.tlc-meta {
+  font-size: 12px;
+  color: #8a6020;
+}
+
+.tlc-badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  flex-shrink: 0;
+}
+
+.tlc-badge--completed {
+  background: #d4f0d4;
+  color: #2a7a2a;
+}
+
+.tlc-badge--cancelled {
+  background: #e8e8e8;
+  color: #666;
+}
+
+.tlc-badge--deleted {
+  background: #ffe0e0;
+  color: #a00;
+}
+
+.timeline-item--deleted .timeline-dot {
+  background: #e06060;
+  box-shadow: 0 0 0 2px #f5b0b0;
+}
+
+.tlc-delete-btn {
+  margin-left: auto;
+  background: none;
+  border: 1px solid #e06060;
+  border-radius: 6px;
+  padding: 3px 8px;
+  font-size: 13px;
+  color: #a00;
+  cursor: pointer;
+  transition: background 0.15s;
+  flex-shrink: 0;
+}
+
+.tlc-delete-btn:hover {
+  background: #ffe0e0;
+}
+
+.tlc-delete-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.timeline-item--deleted .timeline-card {
+  background: #fff5f5;
+  border-color: #f5b0b0;
+  opacity: 0.85;
+}
+
+.tlc-dates {
+  display: flex;
+  gap: 16px;
+  font-size: 12px;
+  color: #8a6020;
+}
+
+.tlc-notes {
+  font-size: 12px;
+  color: #7a5010;
+  font-style: italic;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #e6c87a;
+}

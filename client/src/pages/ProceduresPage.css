@@ -1,0 +1,234 @@
+.procedures-page {
+  padding: 24px;
+}
+
+.procedures-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.procedures-header h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #5a3a00;
+}
+
+.add-proc-btn {
+  background: #e6821a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.add-proc-btn:hover {
+  background: #c46a10;
+}
+
+.proc-loading {
+  color: #8a6020;
+  font-size: 14px;
+}
+
+.proc-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 24px;
+  text-align: center;
+}
+
+.proc-empty h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #5a3a00;
+  margin-bottom: 8px;
+}
+
+.proc-empty p {
+  font-size: 14px;
+  color: #8a6020;
+  margin-bottom: 20px;
+}
+
+/* SECTIONS */
+.proc-section {
+  margin-bottom: 32px;
+}
+
+.proc-section-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #8a6020;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* PROCEDURE CARD */
+.proc-card {
+  background: #fdecc8;
+  border: 1px solid #e6a83a;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.15s;
+}
+
+.proc-card--open {
+  box-shadow: 0 2px 12px rgba(230, 130, 26, 0.18);
+}
+
+.proc-card-header {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.proc-card-header:hover {
+  background: #f8e4b0;
+}
+
+.proc-type-emoji {
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.proc-card-info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.proc-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #5a3a00;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.proc-meta {
+  font-size: 12px;
+  color: #8a6020;
+}
+
+.proc-card-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.proc-date {
+  font-size: 12px;
+  color: #8a6020;
+}
+
+.proc-chevron {
+  font-size: 10px;
+  color: #c49040;
+  flex-shrink: 0;
+}
+
+/* STATUS BADGES */
+.proc-status {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.status-upcoming {
+  background: #e8f0fe;
+  color: #1a56d6;
+}
+
+.status-due-soon {
+  background: #fff3cd;
+  color: #8a5c00;
+}
+
+.status-due-today {
+  background: #ffe0e0;
+  color: #a00;
+}
+
+.status-completed {
+  background: #d4f0d4;
+  color: #2a7a2a;
+}
+
+.status-snoozed {
+  background: #e8e8e8;
+  color: #666;
+}
+
+.status-cancelled {
+  background: #e8e8e8;
+  color: #666;
+  text-decoration: line-through;
+}
+
+/* DETAIL PANEL */
+.proc-detail {
+  border-top: 1px solid #e6a83a;
+  padding: 16px;
+  background: #fff8f0;
+}
+
+.proc-detail-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  margin-bottom: 16px;
+}
+
+.proc-detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.proc-detail-item--full {
+  flex: 1 1 100%;
+}
+
+.proc-detail-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #8a6020;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.proc-detail-value {
+  font-size: 13px;
+  font-weight: 600;
+  color: #5a3a00;
+}
+
+/* ACTIONS */
+.proc-actions {
+  display: flex;
+  gap: 10px;
+  padding-top: 4px;
+}
+
+/* btn-complete, btn-edit, btn-delete sú v App.css */

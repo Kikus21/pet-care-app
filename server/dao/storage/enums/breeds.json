@@ -1,0 +1,37 @@
+{
+    "DOG": [
+        "LABRADOR",
+        "GOLDEN_RETRIEVER",
+        "GERMAN_SHEPHERD",
+        "AUSTRALIAN_SHEPHERD",
+        "BULLDOG",
+        "POODLE",
+        "BEAGLE",
+        "OTHER"
+    ],
+    "CAT": [
+        "PERSIAN",
+        "SIAMESE",
+        "MAINE_COON",
+        "BENGAL",
+        "BRITISH_SHORTHAIR",
+        "OTHER"
+    ],
+    "RABBIT": [
+        "HOLLAND_LOP",
+        "MINI_REX",
+        "LIONHEAD",
+        "DUTCH",
+        "OTHER"
+    ],
+    "BIRD": [
+        "PARROT",
+        "CANARY",
+        "COCKATIEL",
+        "BUDGERIGAR",
+        "OTHER"
+    ],
+    "OTHER": [
+        "OTHER"
+    ]
+}
